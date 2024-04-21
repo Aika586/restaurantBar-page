@@ -40,13 +40,13 @@
             </ul>
             <ul class="contacts">
               <li>
-                <a href=""
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
                   ><img src="./assets/icons/Group.png" alt="instagram" />
                   instagram</a
                 >
               </li>
               <li>
-                <a href=""
+                <a href="#" 
                   ><img src="./assets/icons/2гис 1.png" alt="2 Gis" />2Gis</a
                 >
               </li>
@@ -66,9 +66,9 @@
               <li class="nav-item">
                 <a href="#menu" class="nav-link">Меню</a>
               </li>
-              <li><a href="#delivery">Доставка</a></li>
+              <li><a href="#input-reservation">Доставка</a></li>
               <li><a href="#about-us">О нас</a></li>
-              <li><a href="#contacts">Контакты</a></li>
+              <li><a href="#footer">Контакты</a></li>
             </ul>
           </nav>
         </header>
@@ -114,7 +114,7 @@
               </div>
             </div>
 
-            <button class="button reserve">ЗAБРОНИРОВАТЬ СТОЛ</button>
+            <button class="button reserve" id="reservation-button"><a href="#input-reservation">ЗAБРОНИРОВАТЬ СТОЛ</a></button></a>
 
             <!-- Left and right controls/icons -->
             <button
@@ -138,7 +138,8 @@
           </div>
 
           <img src="./assets/images/бронь .png" alt="ordericon" id="bronPng" />
-          <img src="./assets/images/down.png" alt="down" id="down" />
+          <!-- DOWNSCROLL -->
+          <a href="#footer"><img src="./assets/images/down.png" alt="down" id="down" /></a>
         </div>
       </section>
       <!-- О НАС  -->
@@ -193,7 +194,8 @@
                 border: none;
               "
               allowfullscreen
-            >
+            target="_blank"
+            rel="noopener noreferrer">
             </iframe>
           </div>
         </div>
@@ -232,11 +234,11 @@
           </div>
         </div>
       </section>
-      <section id="input-reservation">
+      <!-- FORM_SECTION!!!! -->
+      <section id="input-reservation" class="input-reservation">
         <p>Бронирование столика</p>
         <div class="input-wrapper">
-
-          <form action="#">
+          <form action="#" id="reservation-form">
             <div>
               <label for="custumer_name">ФИО клиента</label>
               <input
@@ -244,35 +246,97 @@
                 name="custumer_name"
                 id="custumer_name"
                 value="Михаил"
+                required
               />
             </div>
             <div>
               <label for="phone_number">Номер клиента</label>
-              <input type="phone" name="phone_number" id="phone_number" />
+              <input
+                type="phone"
+                name="phone_number"
+                id="phone_number"
+                value="+996 501 06 55 05"
+                required
+              />
             </div>
-            <div class="" select-container>
+            <div class="select-container">
               <label for="residence_time">Время нахождения</label>
+              <div class="select">
               <select name="residence_time" id="residence_time">
-                <option value="2часа">2часа</option>
+                <option value="2часа" selected>2часа</option>
                 <option value="4часа">4 часа</option>
                 <option value="6часа">6часа</option>
               </select>
+              <img src="./assets/icons/Frame (3).png" alt="arrowIcon" class="arrowIcon"/>
+            </div>
             </div>
             <div>
-              <label for="residence_time">Время брони</label>
-              <input type="text" name="residence_time" id="residence_time" />
+              <label for="time-reserve">Время брони</label>
+              <input
+                type="text"
+                name="time-reserve"
+                id="time-reserve"
+                value="16.00"
+                required
+              />
             </div>
             <div>
               <label for="number_guest">Количество гостей</label>
-              <input type="text" name="number_guest" id="number_guest" />
+              <input
+                type="text"
+                name="number_guest"
+                id="number_guest"
+                value="2 гостей"
+              />
             </div>
             <div>
               <label for="comments">Комментарий</label>
-              <input type="text" name="comments" id="comments" />
+              <input
+                type="text"
+                name="comments"
+                id="comments"
+                value="свидание"
+              />
             </div>
-            <button class="button">Забронировать стол</button>
+            <div>
+              <button class="button" id="form-button">
+                Забронировать стол
+              </button>
+            </div>
           </form>
         </div>
+      </section>
+      <section id="footer">
+    <footer>
+      <div class="footer">
+        <div class="logo-container">
+          <a href="#homePage"><img src="./assets/icons/ьоно 1.png" alt="logo"/></a>
+          <a href="#homePage"><img src="./assets/icons/arrowUp.png" alt="arrowUp"/></a> 
+        </div>
+        <ul class="address-list ul">
+          <li>/ Адрес</li>
+          <li><a href="#"> карта 2 гис</a></li>
+          <li><a href="#"></a>карта Google</a></li>
+          <li>Доставка</li>
+        </ul>
+        <ul class="phone-list ul"></ul>
+        <ul class="email-list ul"></ul>
+        <ul class="nav-list ul">
+          <li>/ Навигации по страницам</li>
+          <li><a href="#homePage">Главный экран</a></li>
+          <li><a href="#about-us"> О Нас</a></li>
+          <li><a href="#menu"> Меню</a></li>
+          <li><a href="#footer"> Контакты</a></li>
+          <li><a href="#input-reservation"> Бронь столика</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom container">
+        <p>© 2024 год, Bono bar . Все права защищены. </p>
+        <ul class="socialMedia-list">
+
+        </ul>
+      </div>
+    </footer>
       </section>
     </main>
 

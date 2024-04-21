@@ -13,14 +13,16 @@ a {
   color: inherit !important;
 }
 
-
-
 button {
   background: none;
   border: none;
   padding: 0;
   margin: 0;
 }
+section{
+  background-color: black;
+}
+
 /* HOME PAGE STYLE */
 .homePage {
   background-image: url("./assets/images/hero.png");
@@ -88,6 +90,7 @@ a.active {
 .reserve {
   padding: 10px 44px;
   border-radius: 24px !important;
+  z-index:3000 !important;
 }
 
 .nav-bar {
@@ -199,7 +202,7 @@ a.active {
 }
 
 /*  STYLE- section ABOUT US */
-#about-us{
+#about-us {
   background-color: #181818;
 }
 
@@ -245,29 +248,31 @@ a.active {
   color: #ffffff !important;
 }
 
-.information-container{
+.information-container {
   display: flex;
   align-items: center;
-  gap:40px;
-  padding-top:100px;
-  padding-bottom:200px;
+  gap: 40px;
+  padding-top: 100px;
+  padding-bottom: 200px;
 }
 
 /* STYLE FORM!!! */
 
-.input-wrapper{
+.input-wrapper {
   background-color: black;
-  width:428px;
-  height:582px;
+  width: 428px;
+  height: 582px;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  padding: 50px;
+  border-radius: 50px;
 }
 
-#input-reservation{
-  width:100%;
-  height:min(900px,100vh);
+
+#input-reservation {
+  width: 100%;
+  height: min(900px, 100vh);
   background-image: url("https://goo.su/StzHz");
   background-size: cover;
   background-position: center;
@@ -275,10 +280,93 @@ a.active {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
 }
 
-form{
-  padding:50px;
+#input-reservation p{
+  font-size:48px;
+}
+
+
+label {
+  font-size: 13px;
+}
+form > div {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  width: 328px;
+}
+
+input,
+select {
+  padding: 8px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 16px;
+}
+
+#form-button,
+input,
+select {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background-color: #282828;
+}
+
+#form-button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+select {
+  appearance: none;
+}
+.select{
+  position:relative;
+}
+.arrowIcon{
+  width:24px;
+  height:24px;
+  position:absolute;
+  top:50%;
+  transform: translateY(-50%);
+  right:20px;
+  pointer-events: none;
+}
+
+
+
+
+/* FOOTER STYLE !!!!! */
+
+.logo-container{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  width:90px;
+}
+footer{
+  padding-top:39px;
+}
+.footer{
+  display:flex;
+  justify-content: space-around;
+  background-color:#141217 ;
+  padding-block:50px;
+  border-bottom:1px solid rgba(255, 255, 255, 0.2)
+}
+.socialMedia-list, .footer-bottom{
+  display:flex;
+  gap:12px;
+}
+
+.footer-bottom{
+  padding:20px;
+}
+
+footer ul li:first-child {
+  font-weight: bold;
+  padding-bottom:10px;
+  
 }
 
