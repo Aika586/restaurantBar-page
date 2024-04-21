@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+/* HOME PAGE STYLE */
+.homePage {
+  background-image: url("./assets/images/hero.png");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.container {
+  max-width: calc(1240px - (2 * 10));
+  margin-inline: auto;
+  padding-inline: 10px;
+}
+
+.top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-block: 10px;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 18px;
+  font-size: 16px;
+  padding: 0px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 29px;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 5px;
+}
+
+a.active {
+  border-bottom: 1px solid white;
+}
+
+.button {
+  width: max-content;
+  padding: 5px;
+  border-radius: 500px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  color: white;
+}
+
+.order {
+  padding-inline: 55px;
+}
+
+.reserve {
+  padding: 10px 44px;
+  border-radius: 24px !important;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+/* CAROUSEL STYLE */
+
+.carousel-content {
+  text-align: start;
+  color: white;
+  width: 100%;
+  font-size: 70px;
+}
+.carousel-item {
+  width: 1017px;
+  height: 222px;
+  line-height: 74px;
+  letter-spacing: 5px;
+  margin-bottom: 45px;
+}
+.carousel {
+  max-width: 1017px;
+  min-height: 358px;
+  display: flex;
+  flex-direction: column;
+  position: relative !important;
+}
+
+.carousel-indicators {
+  position: absolute !important;
+  bottom: -100px !important;
+}
+.wrapper-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 50px !important;
+  height: 74px !important;
+  position: absolute !important;
+  right: -76px !important;
+}
+
+.carousel-control-prev-icon {
+  position: absolute !important;
+  left: -76px !important;
+}
+
+#bronPng {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 100px;
+  right: 135px;
+}
+
+#down {
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+  cursor: pointer;
+}
+
+/* STYLE  ABOUT */
+
+.blackColor {
+  background-color: black;
+}
+.wrapper-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 176px;
+}
+
+.text-container1,
+.text-container2 {
+  font-size: 18px;
+  max-width: 536px;
+  line-height: 26px;
+
+  padding: 0;
+}
+
+.content-container {
+  display: flex;
+  gap: 40px;
+}
+
+/* STYLE MENU */
+
+.menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-wrapper > img {
+  padding: 50px;
+}
+
+/*  STYLE- section ABOUT US */
+#about-us{
+  background-color: #181818;
+}
+
+/* STYLE PHOTO GALLERY !!!*/
+
+.swiper-slide {
+  width: 400px !important;
+  height: 400px !important;
+  background-color: black;
+}
+
+#galleryWord {
+  font-size: 48px;
+}
+
+.gallery-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  margin-bottom: 10px;
+  position: relative !important;
+  margin-inline: auto;
+  margin-top: 107px;
+  margin-bottom: 50px;
+}
+.swiper-container {
+  height: auto;
+  overflow: hidden !important;
+  padding: 20px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 16px !important;
+  height: 32px !important;
+  color: rgb(246, 237, 237) !important;
+  z-index: 1000 !important;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: #ffffff !important;
+}
+
+.information-container{
+  display: flex;
+  align-items: center;
+  gap:40px;
+  padding-top:100px;
+  padding-bottom:200px;
+}
+
+/* STYLE FORM!!! */
+
+.input-wrapper{
+  background-color: black;
+  width:428px;
+  height:582px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#input-reservation{
+  width:100%;
+  height:min(900px,100vh);
+  background-image: url("https://goo.su/StzHz");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+form{
+  padding:50px;
+}
+
